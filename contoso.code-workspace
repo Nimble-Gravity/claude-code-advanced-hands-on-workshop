@@ -1,0 +1,17 @@
+{
+  "folders": [
+    { "name": "ContosoBank Workshop (Day 1 + Day 2)", "path": "." }
+  ],
+  "settings": {
+    "files.exclude": {
+      "**/__pycache__": true,
+      "**/*.pyc": true
+    }
+  },
+  "extensions": {
+    "recommendations": [
+      "ms-python.python",
+      "ms-toolsai.jupyter"
+    ]
+  }
+}

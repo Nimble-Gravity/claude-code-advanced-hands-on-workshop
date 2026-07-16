@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+contoso.db
+artifacts/
+_build/
+.venv/
+.claude/agents
+!.claude/agents/README.md
+docs/
+.env
+.env.*

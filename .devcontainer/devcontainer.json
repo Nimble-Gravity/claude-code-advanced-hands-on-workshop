@@ -1,0 +1,35 @@
+{
+  "name": "ContosoBank Workshop",
+  "image": "mcr.microsoft.com/devcontainers/python:3.12",
+
+  // Mount the repo at the SAME absolute path inside the container as on the host.
+  // This is required for the Day 2 Module 3 Docker sandbox: with docker-outside-of-docker
+  // the daemon is the HOST daemon, so `run-sandbox.sh`'s `-v "$PWD":/work` bind mount
+  // must resolve to a path the host can see. Aligning the paths makes that work.
+  "workspaceMount": "source=${localWorkspaceFolder},target=${localWorkspaceFolder},type=bind",
+  "workspaceFolder": "${localWorkspaceFolder}",
+
+  "features": {
+    "ghcr.io/devcontainers/features/node:1": { "version": "lts" },
+    "ghcr.io/devcontainers/features/github-cli:1": {},
+    "ghcr.io/devcontainers/features/docker-outside-of-docker:1": {}
+  },
+
+  "forwardPorts": [8888],
+  "portsAttributes": {
+    "8888": { "label": "JupyterLab", "onAutoForward": "notify" }
+  },
+
+  "postCreateCommand": "bash .devcontainer/post-create.sh",
+
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "ms-toolsai.jupyter"
+      ]
+    }
+  },
+
+  "remoteUser": "vscode"
+}
