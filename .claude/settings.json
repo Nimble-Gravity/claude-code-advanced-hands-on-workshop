@@ -1,10 +1,16 @@
 {
+  "env": {
+    "CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS": "1"
+  },
   "permissions": {
     "deny": [
       "Read(./.env)",
       "Read(./.env.*)",
       "Bash(git push:*)",
-      "Bash(rm -rf:*)"
+      "Bash(rm -rf:*)",
+      "Bash(curl:*)",
+      "Bash(wget:*)",
+      "Read(~/.ssh/*)"
     ]
   }
 }

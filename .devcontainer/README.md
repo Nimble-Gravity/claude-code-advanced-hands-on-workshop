@@ -1,9 +1,7 @@
 # Dev Container
 
 A ready-to-go environment for the ContosoBank workshop (Day 1 + Day 2). Open the
-`claude-code-workshop` folder in VS Code and choose **Reopen in Container**, or open
-the top-level `advanced-claude-code.code-workspace` and reopen its ContosoBank root in
-the container.
+`claude-code-workshop` folder in VS Code and choose **Reopen in Container**.
 
 ## What's included
 

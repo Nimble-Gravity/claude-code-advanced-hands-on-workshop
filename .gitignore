@@ -4,8 +4,11 @@ contoso.db
 artifacts/
 _build/
 .venv/
-.claude/agents
+.claude/agents/*
 !.claude/agents/README.md
+!.claude/agents/shipit.md
+!.claude/agents/skeptic.md
+!.claude/agents/merchant.md
 docs/
 .env
 .env.*
